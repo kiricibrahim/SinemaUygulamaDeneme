@@ -173,7 +173,6 @@ namespace OrnekDevExpress.Forms
         }
         private void guna2Button100_Click(object sender, EventArgs e)
         {
-
         }
         void bay_bayansecim()
         {
