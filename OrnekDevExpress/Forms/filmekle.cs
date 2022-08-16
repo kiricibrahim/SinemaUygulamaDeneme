@@ -251,5 +251,10 @@ namespace OrnekDevExpress.Forms
         {
             comboBoxoyuncuid.SelectedValue = comboBoxoyuncu.SelectedIndex;
         }
+
+        private void comboBoxoyuncuid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

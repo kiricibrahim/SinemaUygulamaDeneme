@@ -29,7 +29,7 @@ namespace OrnekDevExpress
         private void accordionControlElement3_Click(object sender, EventArgs e)
         {
             pnlanasayfa.Controls.Clear();
-            Forms.Firmalar frm2 = new Forms.Firmalar();
+            Forms.filmler frm2 = new Forms.filmler();
             frm2.TopLevel = false;
             pnlanasayfa.Controls.Add(frm2);
             frm2.Show();

@@ -43,8 +43,8 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -57,15 +57,16 @@
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fluentDesignFormContainer1.Location = new System.Drawing.Point(202, 0);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(931, 348);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(931, 379);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // pnlanasayfa
             // 
+            this.pnlanasayfa.AutoSize = true;
             this.pnlanasayfa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlanasayfa.Location = new System.Drawing.Point(0, 0);
             this.pnlanasayfa.Name = "pnlanasayfa";
-            this.pnlanasayfa.Size = new System.Drawing.Size(931, 348);
+            this.pnlanasayfa.Size = new System.Drawing.Size(931, 379);
             this.pnlanasayfa.TabIndex = 0;
             // 
             // accordionControl1
@@ -76,7 +77,7 @@
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(202, 348);
+            this.accordionControl1.Size = new System.Drawing.Size(202, 379);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -122,7 +123,7 @@
             // 
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "Firmalar";
+            this.accordionControlElement3.Text = "Filmler";
             this.accordionControlElement3.Click += new System.EventHandler(this.accordionControlElement3_Click);
             // 
             // fluentDesignFormControl1
@@ -164,6 +165,12 @@
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "barButtonItem4";
+            this.barButtonItem4.Id = 3;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
             // fluentFormDefaultManager1
             // 
             this.fluentFormDefaultManager1.Form = this;
@@ -174,17 +181,11 @@
             this.barButtonItem4});
             this.fluentFormDefaultManager1.MaxItemId = 4;
             // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "barButtonItem4";
-            this.barButtonItem4.Id = 3;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
             // Anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 348);
+            this.ClientSize = new System.Drawing.Size(1133, 379);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
@@ -196,6 +197,7 @@
             this.Text = "Anasayfa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.fluentDesignFormContainer1.ResumeLayout(false);
+            this.fluentDesignFormContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();

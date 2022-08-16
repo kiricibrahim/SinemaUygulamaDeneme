@@ -18,12 +18,8 @@ namespace OrnekDevExpress.Forms
         SqlCommand komut;
         SqlDataReader read;
 
-       
-
         public SqlDataReader kullanicigiris(Guna2TextBox kullaniciadi, Guna2TextBox sifre)
         {
-
-
             baglanti.Open();
             komut = new SqlCommand();
             komut.Connection = baglanti;
@@ -35,7 +31,6 @@ namespace OrnekDevExpress.Forms
                 {
                     RibbonForm1 gitt = new RibbonForm1();
                     gitt.Show();   
-                    
                 }
                 else
                 {
@@ -48,7 +43,6 @@ namespace OrnekDevExpress.Forms
             }
             baglanti.Close();
             return read;
-
         }
 
         

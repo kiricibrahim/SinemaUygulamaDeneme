@@ -65,7 +65,9 @@
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // workspaceManager1
@@ -160,6 +162,7 @@
             // 
             // barButtonItem5
             // 
+            this.barButtonItem5.Caption = "Ana Menü";
             this.barButtonItem5.Id = 14;
             this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
             this.barButtonItem5.Name = "barButtonItem5";
@@ -227,6 +230,8 @@
             // 
             // ribbon
             // 
+            this.ribbon.ApplicationButtonDropDownControl = this.applicationMenu1;
+            this.ribbon.BackColor = System.Drawing.Color.White;
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -256,6 +261,7 @@
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage5});
+            this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbon.Size = new System.Drawing.Size(1135, 177);
             // 
             // barButtonGroup1
@@ -328,8 +334,15 @@
             this.panel1.Size = new System.Drawing.Size(1135, 322);
             this.panel1.TabIndex = 2;
             // 
+            // applicationMenu1
+            // 
+            this.applicationMenu1.Name = "applicationMenu1";
+            this.applicationMenu1.Ribbon = this.ribbon;
+            // 
             // RibbonForm1
             // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 499);
@@ -342,6 +355,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.RibbonForm1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,5 +396,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
+        private DevExpress.XtraBars.Ribbon.ApplicationMenu applicationMenu1;
     }
 }

@@ -237,6 +237,7 @@
             this.comboBoxoyuncuid.Name = "comboBoxoyuncuid";
             this.comboBoxoyuncuid.Size = new System.Drawing.Size(38, 27);
             this.comboBoxoyuncuid.TabIndex = 22;
+            this.comboBoxoyuncuid.SelectedIndexChanged += new System.EventHandler(this.comboBoxoyuncuid_SelectedIndexChanged);
             // 
             // comboBoxturid
             // 

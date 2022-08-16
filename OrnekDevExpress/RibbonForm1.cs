@@ -28,6 +28,7 @@ namespace OrnekDevExpress
             panel1.Controls.Clear();
             Forms.satis1frm formsatis = new Forms.satis1frm();
             formsatis.TopLevel = false;
+            formsatis.WindowState = FormWindowState.Maximized;
             panel1.Controls.Add(formsatis);
             formsatis.Show();
 
@@ -46,7 +47,7 @@ namespace OrnekDevExpress
         private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
         {
             panel1.Controls.Clear();
-            Anasayfa frm1 = new Anasayfa();
+            Forms.filmler frm1 = new Forms.filmler();
             frm1.TopLevel = false;
             panel1.Controls.Add(frm1);
             frm1.Show();
@@ -55,7 +56,7 @@ namespace OrnekDevExpress
         private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
         {
             panel1.Controls.Clear();
-            Forms.resimeklemedeneme eklefilm = new Forms.resimeklemedeneme();
+            Forms.FilmEkleme eklefilm = new Forms.FilmEkleme();
             eklefilm.TopLevel = false;
             panel1.Controls.Add(eklefilm);
             eklefilm.Show();

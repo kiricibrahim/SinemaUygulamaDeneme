@@ -13,13 +13,13 @@ using System.Data.SqlClient;
 
 namespace OrnekDevExpress.Forms
 {
-    public partial class resimeklemedeneme : DevExpress.XtraEditors.XtraForm
+    public partial class FilmEkleme : DevExpress.XtraEditors.XtraForm
     {
         SqlCommand komut;
         SqlConnectionStringBuilder csb;
         SqlDataAdapter da;
         SqlConnection baglanti;
-        public resimeklemedeneme()
+        public FilmEkleme()
         {
             InitializeComponent();
         }
@@ -61,7 +61,7 @@ namespace OrnekDevExpress.Forms
                 }
             }
         }
-        //resim kaydet
+        //Kaydet Butonu
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (pictureBox1.ImageLocation.ToString() != "")
@@ -75,17 +75,18 @@ namespace OrnekDevExpress.Forms
                         komut.Connection = connection;
                         komut.CommandText = "INSERT INTO filtblyeni (film_adi,film_tur_id,film_yonetmeni,resimi,film_oyuncuid,seans_id,salon_id) VALUES (@film_adi,@film_tur_id,@film_yonetmeni,@resimi,@film_oyuncuid,@seans_id,@salon_id)";
                         komut.Parameters.AddWithValue("@film_adi", txtfilm.Text);
-                        komut.Parameters.AddWithValue("@film_tur_id", comboturr.Text);
+                        komut.Parameters.AddWithValue("@film_tur_id", comboturr.SelectedIndex);
                         komut.Parameters.AddWithValue("@film_yonetmeni", txtyonetmen.Text);
-                        komut.Parameters.AddWithValue("@film_oyuncuid", combooyuncu.Text);
-                        komut.Parameters.AddWithValue("@seans_id", comboseans.Text);
-                        komut.Parameters.AddWithValue("@salon_id", combosalon.Text);
+                        komut.Parameters.AddWithValue("@film_oyuncuid", combooyuncu.SelectedIndex);
+                        komut.Parameters.AddWithValue("@seans_id", comboseans.SelectedIndex);
+                        komut.Parameters.AddWithValue("@salon_id", combosalon.SelectedIndex);
                         komut.Parameters.AddWithValue("@resimi", ImageByteArray);
                         try
                         {
                             connection.Open();
                             komut.ExecuteNonQuery();
                             MessageBox.Show("Başarılı.");
+                            //baglanti.Close();
                         }
                         catch (Exception ex)
                         {
@@ -157,6 +158,7 @@ namespace OrnekDevExpress.Forms
             dr = komut.ExecuteReader();
             while (dr.Read())
             {
+                //combosalon.Items.Add(dr["salon_id"]);
                 combosalon.Items.Add(dr["salon_adi"]);
             }
             baglanti.Close();
@@ -172,6 +174,7 @@ namespace OrnekDevExpress.Forms
             dr = komut.ExecuteReader();
             while (dr.Read())
             {
+                //combooyuncu.Items.Add(dr["oyuncu_id"]);
                 combooyuncu.Items.Add(dr["oyuncu_adi"]);
             }
             baglanti.Close();
@@ -186,7 +189,9 @@ namespace OrnekDevExpress.Forms
             dr = komut.ExecuteReader();
             while (dr.Read())
             {
+               // comboturr.Items.Add(dr["tur_id"]);
                 comboturr.Items.Add(dr["tur_adi"]);
+
             }
             baglanti.Close();
         }
@@ -201,17 +206,34 @@ namespace OrnekDevExpress.Forms
             drse = komut.ExecuteReader();
             while (drse.Read())
             {
+                //comboseans.Items.Add(drse["seans_id"]);
                 comboseans.Items.Add(drse["seans_saat"]);
             }
-
-            //if ((bool)comboseans.SelectedItem)
-            //{
-            //    panel3.Visible = true;
-            //}
             baglanti.Close();
         }
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //comboturid.SelectedValue = comboturr.SelectedIndex;
+        }
+
+        private void combooyuncu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           // combooyuncuid.SelectedValue = combooyuncu.SelectedIndex;
+        }
+
+        private void combosalon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           // combosalonid.SelectedValue = combosalon.SelectedIndex;
+        }
+
+        private void comboseans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //comboseansid.SelectedValue = comboseans.SelectedIndex;
+        }
+
+        private void txtyonetmen_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

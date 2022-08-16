@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\acilis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\acilis.Designer.cs">
+      <DependentUpon>acilis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Anasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,11 +77,18 @@
     <Compile Include="Forms\Dashboard1.Designer.cs">
       <DependentUpon>Dashboard1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\dbIslemleri.cs" />
     <Compile Include="Forms\filmekle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\filmekle.Designer.cs">
       <DependentUpon>filmekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\filmler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\filmler.Designer.cs">
+      <DependentUpon>filmler.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Firmalar.cs">
       <SubType>Form</SubType>
@@ -102,11 +115,11 @@
       <DependentUpon>koltuksecim.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\kullanici_islemleri.cs" />
-    <Compile Include="Forms\resimeklemedeneme.cs">
+    <Compile Include="Forms\FilmEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\resimeklemedeneme.Designer.cs">
-      <DependentUpon>resimeklemedeneme.cs</DependentUpon>
+    <Compile Include="Forms\FilmEkleme.Designer.cs">
+      <DependentUpon>FilmEkleme.cs</DependentUpon>
     </Compile>
     <Compile Include="giris.cs">
       <SubType>Form</SubType>
@@ -144,11 +157,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SinemaDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\acilis.resx">
+      <DependentUpon>acilis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\filmekle.resx">
       <DependentUpon>filmekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\filmler.resx">
+      <DependentUpon>filmler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Firmalar.resx">
       <DependentUpon>Firmalar.cs</DependentUpon>
@@ -162,8 +181,8 @@
     <EmbeddedResource Include="Forms\koltuksecim.resx">
       <DependentUpon>koltuksecim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\resimeklemedeneme.resx">
-      <DependentUpon>resimeklemedeneme.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FilmEkleme.resx">
+      <DependentUpon>FilmEkleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\satis1frm.resx">
       <DependentUpon>satis1frm.cs</DependentUpon>

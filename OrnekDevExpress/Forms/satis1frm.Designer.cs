@@ -65,21 +65,24 @@
             this.radialMenu1 = new DevExpress.XtraBars.Ribbon.RadialMenu(this.components);
             this.ımageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.combokoltuk = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.rdogrenci = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdtam = new Guna.UI2.WinForms.Guna2RadioButton();
             this.combosalon = new Guna.UI2.WinForms.Guna2ComboBox();
             this.comboseans = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.combofilm = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.bayradio = new Guna.UI2.WinForms.Guna2RadioButton();
             this.bayanradio = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtad = new Guna.UI2.WinForms.Guna2TextBox();
             this.comboyas = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button100 = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -87,7 +90,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radialMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ımageCollection1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -356,31 +358,46 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.guna2GradientTileButton1);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.guna2Button100);
             this.panel1.Location = new System.Drawing.Point(235, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1031, 700);
             this.panel1.TabIndex = 22;
             // 
-            // pictureBox2
+            // guna2GradientTileButton1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(581, 210);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
+            this.guna2GradientTileButton1.AutoRoundedCorners = true;
+            this.guna2GradientTileButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientTileButton1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2GradientTileButton1.BorderRadius = 52;
+            this.guna2GradientTileButton1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.guna2GradientTileButton1.BorderThickness = 3;
+            this.guna2GradientTileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientTileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientTileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientTileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2GradientTileButton1.FillColor2 = System.Drawing.Color.Black;
+            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientTileButton1.Location = new System.Drawing.Point(62, 59);
+            this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
+            this.guna2GradientTileButton1.Size = new System.Drawing.Size(398, 107);
+            this.guna2GradientTileButton1.TabIndex = 27;
+            this.guna2GradientTileButton1.Text = "KIRICI SİNEMASI";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.combokoltuk);
+            this.groupBox2.Controls.Add(this.guna2Button1);
             this.groupBox2.Controls.Add(this.rdogrenci);
             this.groupBox2.Controls.Add(this.rdtam);
             this.groupBox2.Controls.Add(this.combosalon);
             this.groupBox2.Controls.Add(this.comboseans);
+            this.groupBox2.Controls.Add(this.guna2Button2);
             this.groupBox2.Controls.Add(this.combofilm);
             this.groupBox2.Controls.Add(this.labelControl4);
             this.groupBox2.Controls.Add(this.labelControl5);
@@ -394,6 +411,42 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Film İşlemleri";
             // 
+            // combokoltuk
+            // 
+            this.combokoltuk.BackColor = System.Drawing.Color.Transparent;
+            this.combokoltuk.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combokoltuk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combokoltuk.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combokoltuk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.combokoltuk.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.combokoltuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combokoltuk.ItemHeight = 30;
+            this.combokoltuk.Location = new System.Drawing.Point(269, 151);
+            this.combokoltuk.Name = "combokoltuk";
+            this.combokoltuk.Size = new System.Drawing.Size(140, 36);
+            this.combokoltuk.TabIndex = 30;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.DarkRed;
+            this.guna2Button1.Location = new System.Drawing.Point(269, 113);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(169, 36);
+            this.guna2Button1.TabIndex = 29;
+            this.guna2Button1.Text = "Satış";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // rdogrenci
             // 
             this.rdogrenci.AutoSize = true;
@@ -403,7 +456,8 @@
             this.rdogrenci.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdogrenci.CheckedState.InnerOffset = -4;
             this.rdogrenci.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold);
-            this.rdogrenci.Location = new System.Drawing.Point(141, 156);
+            this.rdogrenci.ForeColor = System.Drawing.Color.White;
+            this.rdogrenci.Location = new System.Drawing.Point(143, 158);
             this.rdogrenci.Name = "rdogrenci";
             this.rdogrenci.Size = new System.Drawing.Size(93, 25);
             this.rdogrenci.TabIndex = 27;
@@ -422,6 +476,7 @@
             this.rdtam.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdtam.CheckedState.InnerOffset = -4;
             this.rdtam.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold);
+            this.rdtam.ForeColor = System.Drawing.Color.White;
             this.rdtam.Location = new System.Drawing.Point(65, 158);
             this.rdtam.Name = "rdtam";
             this.rdtam.Size = new System.Drawing.Size(57, 25);
@@ -464,6 +519,27 @@
             this.comboseans.Size = new System.Drawing.Size(192, 36);
             this.comboseans.TabIndex = 24;
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.BorderRadius = 10;
+            this.guna2Button2.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.guna2Button2.BorderThickness = 2;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.guna2Button2.ForeColor = System.Drawing.Color.IndianRed;
+            this.guna2Button2.Location = new System.Drawing.Point(269, 71);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(169, 36);
+            this.guna2Button2.TabIndex = 18;
+            this.guna2Button2.Text = "Koltuk Seç";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button100_Click_1);
+            // 
             // combofilm
             // 
             this.combofilm.BackColor = System.Drawing.Color.Transparent;
@@ -483,6 +559,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_id);
             this.groupBox1.Controls.Add(this.bayradio);
             this.groupBox1.Controls.Add(this.bayanradio);
             this.groupBox1.Controls.Add(this.guna2HtmlLabel2);
@@ -499,6 +576,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişisel Bilgiler";
             // 
+            // txt_id
+            // 
+            this.txt_id.BorderRadius = 5;
+            this.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id.DefaultText = "";
+            this.txt_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_id.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_id.Location = new System.Drawing.Point(252, 71);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.PasswordChar = '\0';
+            this.txt_id.PlaceholderText = "";
+            this.txt_id.SelectedText = "";
+            this.txt_id.Size = new System.Drawing.Size(186, 36);
+            this.txt_id.TabIndex = 30;
+            // 
             // bayradio
             // 
             this.bayradio.AutoSize = true;
@@ -508,7 +605,8 @@
             this.bayradio.CheckedState.InnerColor = System.Drawing.Color.White;
             this.bayradio.CheckedState.InnerOffset = -4;
             this.bayradio.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold);
-            this.bayradio.Location = new System.Drawing.Point(170, 108);
+            this.bayradio.ForeColor = System.Drawing.Color.White;
+            this.bayradio.Location = new System.Drawing.Point(171, 113);
             this.bayradio.Name = "bayradio";
             this.bayradio.Size = new System.Drawing.Size(54, 25);
             this.bayradio.TabIndex = 29;
@@ -527,6 +625,7 @@
             this.bayanradio.CheckedState.InnerColor = System.Drawing.Color.White;
             this.bayanradio.CheckedState.InnerOffset = -4;
             this.bayanradio.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bayanradio.ForeColor = System.Drawing.Color.White;
             this.bayanradio.Location = new System.Drawing.Point(94, 110);
             this.bayanradio.Name = "bayanradio";
             this.bayanradio.Size = new System.Drawing.Size(71, 25);
@@ -541,6 +640,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Bookman Old Style", 15F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 81);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(53, 26);
@@ -551,6 +651,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(8, 36);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(39, 26);
@@ -690,27 +791,6 @@
             this.comboyas.TabIndex = 12;
             this.comboyas.SelectedIndexChanged += new System.EventHandler(this.comboyas_SelectedIndexChanged);
             // 
-            // guna2Button100
-            // 
-            this.guna2Button100.Animated = true;
-            this.guna2Button100.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button100.BorderRadius = 10;
-            this.guna2Button100.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.guna2Button100.BorderThickness = 2;
-            this.guna2Button100.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button100.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button100.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button100.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button100.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2Button100.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2Button100.ForeColor = System.Drawing.Color.IndianRed;
-            this.guna2Button100.Location = new System.Drawing.Point(234, 569);
-            this.guna2Button100.Name = "guna2Button100";
-            this.guna2Button100.Size = new System.Drawing.Size(113, 28);
-            this.guna2Button100.TabIndex = 18;
-            this.guna2Button100.Text = "Koltuk Seç";
-            this.guna2Button100.Click += new System.EventHandler(this.guna2Button100_Click_1);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -725,7 +805,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(516, 600);
+            this.pictureBox1.Size = new System.Drawing.Size(516, 700);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -752,7 +832,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radialMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ımageCollection1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -800,13 +879,12 @@
         private DevExpress.XtraBars.BarSubItem barSubItem1;
         private DevExpress.Utils.ImageCollection ımageCollection1;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button100;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraBars.SkinPaletteDropDownButtonItem skinPaletteDropDownButtonItem1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2TextBox txtad;
         private Guna.UI2.WinForms.Guna2ComboBox comboyas;
         private Guna.UI2.WinForms.Guna2RadioButton rdogrenci;
@@ -818,5 +896,9 @@
         private Guna.UI2.WinForms.Guna2RadioButton bayanradio;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2ComboBox combokoltuk;
+        private Guna.UI2.WinForms.Guna2TextBox txt_id;
     }
 }
