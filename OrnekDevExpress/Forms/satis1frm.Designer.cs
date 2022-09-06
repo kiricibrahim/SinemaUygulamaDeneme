@@ -67,7 +67,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.combokoltuk = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.rdogrenci = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdtam = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -76,7 +75,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.combofilm = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.bayradio = new Guna.UI2.WinForms.Guna2RadioButton();
             this.bayanradio = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -85,6 +83,7 @@
             this.comboyas = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radialMenu1)).BeginInit();
@@ -391,7 +390,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.combokoltuk);
             this.groupBox2.Controls.Add(this.guna2Button1);
             this.groupBox2.Controls.Add(this.rdogrenci);
             this.groupBox2.Controls.Add(this.rdtam);
@@ -410,21 +408,6 @@
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Film İşlemleri";
-            // 
-            // combokoltuk
-            // 
-            this.combokoltuk.BackColor = System.Drawing.Color.Transparent;
-            this.combokoltuk.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combokoltuk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combokoltuk.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.combokoltuk.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.combokoltuk.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.combokoltuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.combokoltuk.ItemHeight = 30;
-            this.combokoltuk.Location = new System.Drawing.Point(269, 151);
-            this.combokoltuk.Name = "combokoltuk";
-            this.combokoltuk.Size = new System.Drawing.Size(140, 36);
-            this.combokoltuk.TabIndex = 30;
             // 
             // guna2Button1
             // 
@@ -575,26 +558,6 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişisel Bilgiler";
-            // 
-            // txt_id
-            // 
-            this.txt_id.BorderRadius = 5;
-            this.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id.DefaultText = "";
-            this.txt_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_id.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_id.Location = new System.Drawing.Point(252, 71);
-            this.txt_id.Name = "txt_id";
-            this.txt_id.PasswordChar = '\0';
-            this.txt_id.PlaceholderText = "";
-            this.txt_id.SelectedText = "";
-            this.txt_id.Size = new System.Drawing.Size(186, 36);
-            this.txt_id.TabIndex = 30;
             // 
             // bayradio
             // 
@@ -810,6 +773,26 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // txt_id
+            // 
+            this.txt_id.BorderRadius = 5;
+            this.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id.DefaultText = "";
+            this.txt_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_id.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_id.Location = new System.Drawing.Point(252, 71);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.PasswordChar = '\0';
+            this.txt_id.PlaceholderText = "";
+            this.txt_id.SelectedText = "";
+            this.txt_id.Size = new System.Drawing.Size(186, 36);
+            this.txt_id.TabIndex = 30;
+            // 
             // satis1frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -898,7 +881,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2ComboBox combokoltuk;
         private Guna.UI2.WinForms.Guna2TextBox txt_id;
     }
 }

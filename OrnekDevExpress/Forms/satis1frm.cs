@@ -13,7 +13,6 @@ using Guna.UI2.WinForms;
 using System.Collections;
 using System.Threading;
 using System.IO;
-
 namespace OrnekDevExpress.Forms
 {
     public partial class satis1frm : DevExpress.XtraEditors.XtraForm
@@ -36,10 +35,11 @@ namespace OrnekDevExpress.Forms
         ArrayList iptalKoltuk = new ArrayList();
         int filmID;
         int salonID;
+        public static Guna2Button bttnn;
         public static Guna2RadioButton rdbtn;
         public static Guna2RadioButton rdbtn2;
         public static Guna2ComboBox seanscombo;
-
+        public static Guna2ComboBox combosalonn;
         private void backstageViewControl1_Click(object sender, EventArgs e)
         {
 
@@ -55,15 +55,14 @@ namespace OrnekDevExpress.Forms
             salonlistele();
             filmlistele();
             seanslistele();
-            koltuklistele();
+            
             //AfisGoruntule();
             //tiklananboyansin();
             seanscombo = comboseans;
-
+            combosalonn = combosalon;
             rdbtn = bayanradio;
             rdbtn2 = bayradio;
         }
-
         public void seanslistele()
         {
             komut = new SqlCommand("select *from seansTBL");
@@ -110,11 +109,12 @@ namespace OrnekDevExpress.Forms
                     komut.Parameters.AddWithValue("@bilet_id", txt_id.Text);
                     komut.Parameters.AddWithValue("@bilet_adi", combofilm.Text);
                     komut.Parameters.AddWithValue("@film_id", combofilm.SelectedIndex);
-                    komut.Parameters.AddWithValue("@koltuk_id", combokoltuk.SelectedIndex);
+                    //komut.Parameters.AddWithValue("@koltuk_id", combokoltuk.SelectedIndex);
                     komut.Parameters.AddWithValue("@salon_id", combosalon.SelectedIndex);
                     komut.Parameters.AddWithValue("@seans_id", comboseans.SelectedIndex);
                     komut.Parameters.AddWithValue("@musteri_adi", txtad.Text);
                     komut.Parameters.AddWithValue("@musteri_yas", comboyas.SelectedText);
+                    komut.Parameters.AddWithValue("@koltuk_id",koltuksecim.bttnn);
                     if (bayradio.Checked)
                     {
                         komut.Parameters.AddWithValue("@cinsiyet", bayradio.Text);
@@ -148,7 +148,6 @@ namespace OrnekDevExpress.Forms
                         connection.Open();
                         komut.ExecuteNonQuery();
                         MessageBox.Show("Kayıt İşlemi Başarılı");
-
                     }
                     catch (Exception ex)
                     {
@@ -233,7 +232,8 @@ namespace OrnekDevExpress.Forms
             }
             //txtKoltukNo.Text = koltuk;
         }
-        void yenilebutonu()//satılan biletleri listeleme için
+        //satılan biletleri listeleme için
+        void yenilebutonu()
         {
             //baglanti.Open();
             //komut = new SqlCommand("select *from biletTBL");
@@ -260,21 +260,21 @@ namespace OrnekDevExpress.Forms
             }
             baglanti.Close();
         }
-        public void koltuklistele()
-        {
-            komut = new SqlCommand("select * from koltukTBL");
-            komut.Connection = baglanti;
-            komut.CommandType = CommandType.Text;
-            SqlDataReader dr;
-            baglanti.Open();
-            dr = komut.ExecuteReader();
-            while (dr.Read())
-            {
-                combokoltuk.Items.Add(dr["koltujk_harf"]);
-                combokoltuk.Items.Add(dr["koltuk_sira"]);
-            }
-            baglanti.Close();
-        }
+        //public void koltuklistele()
+        //{
+        //    komut = new SqlCommand("select * from koltukTBL");
+        //    komut.Connection = baglanti;
+        //    komut.CommandType = CommandType.Text;
+        //    SqlDataReader dr;
+        //    baglanti.Open();
+        //    dr = komut.ExecuteReader();
+        //    while (dr.Read())
+        //    {
+        //        combokoltuk.Items.Add(dr["koltuk_harf"]);
+        //        combokoltuk.Items.Add(dr["koltuk_sira"]);
+        //    }
+        //    baglanti.Close();
+        //}
         public void filmlistele()
         {
             komut = new SqlCommand("select *from filtblyeni");
@@ -306,6 +306,7 @@ namespace OrnekDevExpress.Forms
                         MemoryStream mem = new MemoryStream(data);
                         pictureBox1.Image = Image.FromStream(mem);
                         //MessageBox.Show("Okuma Başarılı.");
+
                     }
                     else
                     {
@@ -334,25 +335,26 @@ namespace OrnekDevExpress.Forms
             //panel4.Controls.Add(frm1);
             //frm1.Show();
         }
-        
         private void combosalon_SelectedIndexChanged(object sender, EventArgs e)
         {
             //panel3.Visible = true;
         }
         private void guna2Button100_Click_1(object sender, EventArgs e)
         {
-            koltuksecim kltk = new koltuksecim();
-            kltk.ShowDialog(this);
-            //panel4.Visible = true;
+            if (combosalon.SelectedItem==null)
+            {
+                MessageBox.Show("Lütfen bir Salon Seçiniz.");
+            }
+            else
+            {
+                koltuksecim kltk = new koltuksecim();
+                kltk.ShowDialog(this);
+                //panel4.Visible = true;
+            }
+
+
         }
-        public void tiklananboyansin(object sender, EventArgs e)
-        {
-            Guna2Button btn = (sender as Guna2Button);
-            btn.BackColor = Color.AliceBlue;
-            Application.DoEvents();//donmayı engellemek için
-                                   // Thread.Sleep(400);
-                                   //return true;
-        }
+
         private void bayanradio_CheckedChanged(object sender, EventArgs e)
         {
             ////Guna2Button butonumuz = (sender as Guna2Button);
